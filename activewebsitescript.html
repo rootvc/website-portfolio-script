@@ -1,0 +1,50 @@
+<!--Header Injection Tab-->
+<link rel="stylesheet" href="https://assets.squarewebsites.org/custom-filter/custom-filter.min.css"/>
+
+
+<!--Footer Injection Tab-->
+<!--<script src="//unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
+<script>
+window.customFilterSettings = {
+    'targets': [{
+        container: '.sqs-block-gallery',//your css selector here
+        items: '.slide',//your css selector here
+        settings: {
+          	collectionUrl: '/portfolio-1',
+          	showItemsCount: false,
+          	keepDropdownsOpen: true,
+            view: 'breadcrumbs',
+                filter: {
+
+
+
+                    enabled: true, //enabling filter (enabled by default)
+                    category: false, //disabling default category dropdown
+                    tag: false, //disabling default tag dropdown
+                    items: [{
+                         allowedOptions: ['Software', 'Hardware', 'Industrial', 'Exited'],
+                  // if this is defined, only these options will be added to dropdown if existing in items
+                                              sort: 'asAllowed', //sort dropdown parameters exactly in the order you set in allowedOptions, by default it sorts in 'asc', you may also set 'desc' here
+                            name:
+                      ' Category', //naming our new filter
+
+                            multiple: false, //allow several items be selected
+                            defined: false, //set the first parameter active
+
+
+                            getAttr: 'categories' //get values from item categories
+                        }
+                    ]
+                },
+          		sort: {
+                    enabled: false,
+                },
+            	 search: {
+            	    text: '',
+               		enabled: false
+            	}
+        }
+    }]
+};
+</script>
+<script src="https://assets.squarewebsites.org/custom-filter/custom-filter.min.js"></script>

@@ -1,0 +1,43 @@
+<!--Header Injection Tab-->
+<link rel="stylesheet" href="https://assets.squarewebsites.org/custom-filter/custom-filter.min.css"/>
+
+
+<!--Footer Injection Tab-->
+<!--<script src="//unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
+<script>
+window.customFilterSettings = {
+    'targets': [{
+        container: '#block-yui_3_17_2_3_1512982186827_4022',//your css selector here
+        items: '.summary-item',//your css selector here
+        settings: {
+            simpleFilter:{
+                anim: true,
+                show: {
+                    effect: 'scale',
+                    transitionDuration: 800,
+                    stagger: 60
+                },
+                hide: {
+                    effect: 'scale',
+                    transitionDuration: 100,
+                    stagger: 18
+                }
+            },
+            sort: {
+                enabled: true,
+                items: [
+                  { 
+                    name: 'Price',
+                    order: 'asc|desc'
+                  },
+                ]
+            },
+            search: {
+                text: '',
+                enabled: true
+            }
+        }
+    }]
+};
+</script>
+<script src="https://assets.squarewebsites.org/custom-filter/custom-filter.min.js"></script>
