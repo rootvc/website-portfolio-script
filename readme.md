@@ -1,5 +1,5 @@
 # Website Filter
-This contains the scripts and instructions to manage portfolio filtering on the [website](www.root.vc).
+This contains the scripts and instructions to manage portfolio filtering on the [website](https://root.vc).
 
 ## Squarespace
 
